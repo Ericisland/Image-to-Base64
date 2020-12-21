@@ -24,13 +24,14 @@ html {
 <br>
 <button onclick="copyData()">copy data</button>
 <button onclick="generateHtmlTag(); copyTag()">copy HTML tag</button>
-<button onclick="generateMdTag(); copyTag()">copy MD tag</button>  
+<button onclick="generateMdTag(); copyTag()">copy MD tag</button>
+<button onclick="document.getElementByTagName('textarea').value = ''">clear</button>
 <br><br>
 <table>
 <thead>
 <tr>
 <th>
-<textarea readonly placeholder="Base64 data. Pro tip: past clipboard image between the two lines." id="b64" rows="6"></textarea>
+<textarea readonly placeholder="Base64 data. Pro tip: Paste clipboard image between the two lines." id="b64" rows="6"></textarea>
 </th>
 <th>
 <textarea readonly placeholder="HTML/MD image tag" id="tag" rows="6"></textarea>
